@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="comments">Copyright (c) 2006 &lt;&lt;Your Company Name here>></property>
-    <property name="createdBy">Eclipse BIRT Designer Version 4.3.1.v201309091055 Build &lt;4.3.1.v20130917-1035></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201606072122</property>
     <html-property name="description">This template will create a report having a single header with multiple rows of data.</html-property>
     <simple-property-list name="includeResource">
         <value>labor</value>
@@ -385,6 +385,12 @@ return (true);]]></method>
                     <expression name="expression">dataSetRow["contractnum"]</expression>
                     <property name="dataType">string</property>
                 </structure>
+                <structure>
+                    <property name="name">orgid</property>
+                    <text-property name="displayName">orgid</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgid"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
             </list-property>
             <property name="pageBreakInterval">50</property>
             <column id="83">
@@ -455,9 +461,16 @@ return (true);]]></method>
                             </column>
                             <row id="141">
                                 <property name="height">0.06in</property>
-                                <cell id="142"/>
+                                <cell id="142">
+                                    <label id="386">
+                                        <text-property name="text">Organization</text-property>
+                                    </label>
+                                </cell>
                                 <cell id="143">
                                     <property name="paddingLeft">2px</property>
+                                    <data id="385">
+                                        <property name="resultSetColumn">orgid</property>
+                                    </data>
                                 </cell>
                             </row>
                             <row id="112">
