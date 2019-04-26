@@ -461,11 +461,7 @@ return (true);]]></method>
                             </column>
                             <row id="141">
                                 <property name="height">0.06in</property>
-                                <cell id="142">
-                                    <label id="386">
-                                        <text-property name="text">Organization</text-property>
-                                    </label>
-                                </cell>
+                                <cell id="142"/>
                                 <cell id="143">
                                     <property name="paddingLeft">2px</property>
                                     <data id="385">
